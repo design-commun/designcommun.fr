@@ -2,8 +2,10 @@
 :root {
   --color-gray-light: #D5D6D7;
   --color-gray-dark: #343332;
+  --color-30-light: #EBCCAD;
   --color-30-dark: #402B17;
   --color-210-light: #BED6EF;
+  --color-210-dark: #1D3349;
 }
 
 * {
@@ -35,6 +37,15 @@ body {
 ::selection {
   color: #fff;
   background: var(--color-gray-dark);
+}
+
+.mono {
+  font-family: "Courier", monospace;
+  font-size: 113%;
+  line-height: 1.175;
+}
+.disabled {
+  opacity: 0.64;
 }
 
 /* Headings */
@@ -92,10 +103,9 @@ p {
 header[role="banner"] {
   padding: 1rem;
 }
-header[role="banner"], 
-section > header {
-  height: 3rem;
-  margin-bottom: 4rem;
+header[role="banner"] {
+  height: 3.5rem;
+  margin-bottom: 3.5rem;
 }
 header[role="banner"] nav a,
 header[role="banner"] nav h1 {
@@ -127,15 +137,16 @@ section > :first-child {
   margin-top: 0;
 }
 .section {
-  padding: 1rem 1rem 6rem;
+  padding: 1rem;
 }
 .section header {
   display: flex;
+  flex-direction: row-reverse;
   justify-content: space-between;
 }
 .section header h2 {
   font-size: 1rem;
-  margin-top: 0;
+  margin: 0;
 }
 .section h3 {
   margin-bottom: 0;
@@ -157,6 +168,9 @@ section > :first-child {
   color: var(--color-30-dark);
   background: var(--color-210-light);
 }
+#events > header {
+  margin-bottom: 5.5rem;
+}
 .event header {
   display: flex;
   flex-direction: column-reverse;
@@ -171,7 +185,6 @@ section > :first-child {
   margin-top: 0;
 }
 .event__location {
-  font-family: "Courier", monospace;
   margin: 0.6rem 0 0.6rem;
 }
 .event__description {
@@ -179,6 +192,26 @@ section > :first-child {
 }
 .event p {
   max-width: 37.5rem;
+}
+
+/* Ressources section */
+#ressources ::-moz-selection {
+  color: var(--color-30-light);
+  background: var(--color-210-dark);
+}
+#ressources ::selection {
+  color: var(--color-30-light);
+  background: var(--color-210-dark);
+}
+#ressources {
+  color: var(--color-210-dark);
+  background: var(--color-30-light);
+}
+#ressources {
+  max-height: 3.5rem;
+}
+#ressources h2 {
+  display: inline-block;
 }
 
 /* Footer */
@@ -219,6 +252,15 @@ footer[role="contentinfo"] ::selection {
   .container > * {
     width: 50%;
     flex-basis: 50%;
+  }
+  .sections {
+    height: calc(100vh - 5rem);
+  }
+  #ressources {
+    position: absolute;
+    left: 0;
+    right: 0;
+    bottom: 5rem;
   }
   #home footer[role="contentinfo"] {
     position: absolute;

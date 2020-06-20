@@ -58,35 +58,48 @@
 
 			<main role="main">
 				
-				<section id="events" class="section">
-					<header>
-						<h2>événements</h2>
-						<svg aria-hidden="true" width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-							<path fill-rule="evenodd" clip-rule="evenodd" d="M6 10H18V7H6V10ZM18 11H6V18H18V11ZM5 11V10V7V6H6H18H19V7V10V11V18V19H18H6H5V18V11Z" fill="currentColor"/>
-							<rect x="8" y="5" width="1" height="3" fill="currentColor"/>
-							<rect x="15" y="5" width="1" height="3" fill="currentColor"/>
-						</svg>
-					</header>
-
-					<article class="event" itemscope itemtype="http://schema.org/Event">
+				<div class="sections">
+					<section id="events" class="section">
 						<header>
-							<h3 class="event__title" itemprop="name">Résidence estivale #1</h3>
-							<span aria-label="Date : du" class="event__date">
-								<time datetime="2020-06-23">23</time><span aria-label="au">→</span><time datetime="2020-06-29">29 juin 2020</time>
-								<meta itemprop="startDate" content="2020-06-23" />
-								<meta itemprop="endDate" content="2020-06-29" />
-							</span> <br>
+							<svg aria-hidden="true" width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+								<path fill-rule="evenodd" clip-rule="evenodd" d="M6 10H18V7H6V10ZM18 11H6V18H18V11ZM5 11V10V7V6H6H18H19V7V10V11V18V19H18H6H5V18V11Z" fill="currentColor"/>
+								<rect x="8" y="5" width="1" height="3" fill="currentColor"/>
+								<rect x="15" y="5" width="1" height="3" fill="currentColor"/>
+							</svg>
+							<h2>événements</h2>
 						</header>
-						<p class="event__location" aria-label="Lieu" itemprop="location" itemscope itemtype="http://schema.org/Place">
-							<span itemprop="address" itemscope itemtype="http://schema.org/PostalAddress">
-								<span itemprop="addressLocality">Massiac</span>, <span itemprop="addressRegion">Cantal</span>
-								<meta itemprop="postalCode" content="15500" />
-								<meta itemprop="addressCountry" content="France" />
-							</span>
-						</p>
-						<p class="event__description" itemprop="description">Avec une dizaine de designers invité·e·s pour cette première résidence collective, nous réflechirons ensemble aux modes d’actions, aux supports et aux stratégies à mettre en place à partir de l’automne 2020.</p>
-					</article>
-				</section>
+
+						<article class="event" itemscope itemtype="http://schema.org/Event">
+							<header>
+								<h3 class="event__title" itemprop="name">Résidence estivale #1</h3>
+								<span aria-label="Date : du" class="event__date">
+									<time datetime="2020-06-23">23</time><span aria-label="au">→</span><time datetime="2020-06-29">29 juin 2020</time>
+									<meta itemprop="startDate" content="2020-06-23" />
+									<meta itemprop="endDate" content="2020-06-29" />
+								</span> <br>
+							</header>
+							<p class="event__location mono" aria-label="Lieu" itemprop="location" itemscope itemtype="http://schema.org/Place">
+								<span itemprop="address" itemscope itemtype="http://schema.org/PostalAddress">
+									<span itemprop="addressLocality">Massiac</span>, <span itemprop="addressRegion">Cantal</span>
+									<meta itemprop="postalCode" content="15500" />
+									<meta itemprop="addressCountry" content="France" />
+								</span>
+							</p>
+							<p class="event__description" itemprop="description">Avec une dizaine de designers invité·e·s pour cette première résidence collective, nous réflechirons ensemble aux modes d’actions, aux supports et aux stratégies à mettre en place à partir de l’automne 2020.</p>
+						</article>
+					</section>
+
+					<section id="ressources" class="section">
+						<header>
+							<svg aria-hidden="true" width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+								<path fill-rule="evenodd" clip-rule="evenodd" d="M10 7H19V9H11H10V8V7ZM9 7H5V18H19V10H10H9V9V7ZM10 6H19H20V7V9V10V18V19H19H5H4V18V7V6H5H9H10Z" fill="currentColor"/>
+							</svg>
+							<div>
+								<h2>ressources</h2> <span class="mono disabled">(à venir)</span>
+							</div>
+						</header>
+					</section>
+				</div>
 
 				<footer role="contentinfo">
 					<p>design↔commun <br>2020 · <a href="https://creativecommons.org/licenses/by-sa/4.0/deed.fr"><abbr title="Attribution - Partage dans les Mêmes Conditions">CC BY-SA</abbr></a></p>
