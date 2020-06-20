@@ -1,2 +1,9 @@
+# System files
+# ------------
+
+Icon
+.DS_Store
+
+# Infomaniak files
 .infomaniak-maintenance.html
 .user.ini
