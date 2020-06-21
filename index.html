@@ -115,7 +115,33 @@
 
 		</div>
 	
-		<script type="application/ld+json" src="organization.json"></script>
+		<script type="application/ld+json">
+			{
+				"@context": "http://schema.org",
+				"@type": "Organization",
+				"name": "design↔commun",
+				"url": "http://designcommun.fr",
+				"address": {
+				  "@type": "PostalAddress",
+					"addressLocality": "Les Lilas, France",
+					"postalCode": "93260",
+					"streetAddress": "21 rue Jules David"
+				},
+				"founder": [
+					{
+						"@type": "Person",
+						"name": "Gauthier Roussilhe",
+						"url": "http://gauthierroussilhe.com/fr"
+					},
+					{
+						"@type": "Person",
+						"name": "Timothée Goguely",
+						"url": "https://timothee.goguely.com/"
+					}
+				],
+				"foundingDate": "2020-02"
+			}
+		</script>
 	</body>
 
 </html>
