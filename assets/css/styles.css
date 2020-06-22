@@ -41,8 +41,6 @@ body {
 
 .mono {
   font-family: "Courier", monospace;
-  font-size: 113%;
-  line-height: 1.175;
 }
 .disabled {
   opacity: 0.64;
@@ -129,7 +127,7 @@ main {
 /* Home */
 #home main {
   color: var(--color-30-dark);
-  background: var(--color-210-light);
+  background: var(--color-gray-dark);
 }
 
 /* Sections */
@@ -185,7 +183,7 @@ section > :first-child {
   margin-top: 0;
 }
 .event__location {
-  margin: 0.6rem 0 0.6rem;
+  margin: 0.55rem 0;
 }
 .event__description {
   margin-top: 0.6rem;
@@ -245,7 +243,10 @@ footer[role="contentinfo"] ::selection {
 }
 
 /* Media queries */
-@media (min-width: 64rem) {
+@media (min-width: 48rem) {
+  #home main {
+    background: var(--color-210-light);
+  }
   .container {
     flex-direction: row;
   }
