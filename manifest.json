@@ -1,6 +1,7 @@
 {
   "name": "design\u2194commun",
   "short_name": "design\u2194commun",
+  "description": "Redéfinir les cadres d’intervention du design dans les limites planétaires et des écosystèmes, et pluraliser les savoirs, imaginaires et pratiques.",
   "icons": [
   	{
       "src": "/assets/favicons/android-chrome-192x192.png",
