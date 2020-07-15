@@ -10,6 +10,7 @@
 
 * {
   box-sizing: border-box;
+  scroll-behavior: smooth;
 }
 
 html, body {
@@ -253,6 +254,8 @@ footer[role="contentinfo"] ::selection {
   .container > * {
     width: 50%;
     flex-basis: 50%;
+    max-height: 100vh;
+    overflow-y: auto;
   }
   .sections {
     height: calc(100vh - 5rem);
