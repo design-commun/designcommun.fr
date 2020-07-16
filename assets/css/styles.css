@@ -24,7 +24,7 @@ html, body {
 body {
   background-color: #fff;
   color: var(--color-gray-dark);
-	font-family: "Arial", sans-serif;
+	font-family: Arial, -apple-system, BlinkMacSystemFont, Segoe UI, Helvetica, sans-serif, Apple Color Emoji, Segoe UI Emoji;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   line-height: 1.333;
@@ -41,7 +41,7 @@ body {
 }
 
 .mono {
-  font-family: "Courier", monospace;
+  font-family: Courier, monospace;
 }
 .disabled {
   opacity: 0.64;
